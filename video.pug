@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h2 Video Title
+  p Video Description
+  div#player
+  h3 Comments
+  form(action="/videos/1/comments", method="POST")
+    label(for="comment") Add a Comment:
+    textarea(name="comment")
+    button(type="submit") Submit Comment
+  ul
+    li
+      p Comment Text
